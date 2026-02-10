@@ -1,7 +1,5 @@
 # 🧸 Toddler Activity Finder 🧸
 
-The **ToddlerDo iOS App** is under development! Check out [ToddlerDo.com](https://ToddlerDo.com) for the latest updates.
-
 ## 📚 About This Project
 
 Visit [meimakes.com/toddler-activity-finder/](https://meimakes.com/toddler-activity-finder/) to see the live site!
