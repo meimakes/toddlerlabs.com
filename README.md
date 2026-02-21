@@ -1,5 +1,8 @@
 # 🧸 Toddler Activity Finder 🧸
 
+
+Built by [@meimakes](https://x.com/meimakes)
+
 ## 📚 About This Project
 
 Visit [meimakes.com/toddler-activity-finder/](https://meimakes.com/toddler-activity-finder/) to see the live site!
