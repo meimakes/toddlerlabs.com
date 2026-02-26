@@ -1,0 +1,23 @@
+# Toddler Activity Finder
+
+> A free interactive tool helping parents find developmentally appropriate activities for toddlers ages 2-5.
+
+Built by [@meimakes](https://x.com/meimakes) — also writes [Raising Pixels](https://raisingpixels.dev), a newsletter about raising tech-native kids.
+
+## What This Is
+
+A single-page web app with 50+ curated toddler activities, filterable by:
+- Skill category (motor, language, cognitive, sensory, social-emotional)
+- Activity length (5, 10, 15+ minutes)
+- Setup time (quick, some prep, plan ahead)
+- Messiness level (clean, some mess, very messy)
+
+## Tech
+
+Static HTML/CSS/JS. No framework, no build step, no backend. Runs entirely in the browser.
+
+## Related
+
+- [Raising Pixels](https://raisingpixels.dev) — Newsletter on raising tech-native kids
+- [meimakes.com](https://meimakes.com) — Author's hub
+- [ToddlerLabs](https://toddlerlabs.com) — Educational games for toddlers
