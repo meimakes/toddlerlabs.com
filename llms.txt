@@ -1,23 +1,167 @@
-# Toddler Activity Finder
+# Toddler Labs — LLM Directory
 
-> A free interactive tool helping parents find developmentally appropriate activities for toddlers ages 2-5.
+> 115+ free educational activities and browser games for toddlers ages 2-5.
+> No ads, no tracking, no accounts. Built by @meimakes.
+> https://toddlerlabs.com
 
-Built by [@meimakes](https://x.com/meimakes) — also writes [Raising Pixels](https://raisingpixels.dev), a newsletter about raising tech-native kids.
+## About
 
-## What This Is
+Toddler Labs is a single-page directory of:
+- 115 hands-on activities organized by developmental category (motor, language, cognitive, sensory, social)
+- 10 free educational browser games
+- Links to a larger game collection at madladstudios.com
 
-A single-page web app with 50+ curated toddler activities, filterable by:
-- Skill category (motor, language, cognitive, sensory, social-emotional)
-- Activity length (5, 10, 15+ minutes)
-- Setup time (quick, some prep, plan ahead)
-- Messiness level (clean, some mess, very messy)
+All activities include: age range (2-3), category, skill focus, messiness level, setup time, activity length, materials list.
 
-## Tech
+## Activity Protocols (115 total)
 
-Static HTML/CSS/JS. No framework, no build step, no backend. Runs entirely in the browser.
+### Motor Skills (24 activities)
+1. Cotton Ball Transfer — Fine Motor — Low mess — 2 min setup — 10 min
+2. Playdough Exploration — Fine Motor — Medium mess — 2 min setup — 15+ min
+3. Paper Tearing and Collage — Fine Motor — Medium mess — 2 min setup — 15+ min
+4. Finger Painting — Fine Motor — High mess — 5 min setup — 10 min
+5. Sticker/Tape Peeling and Sticking — Fine Motor — Low mess — 2 min setup — 10 min
+6. Button Board — Fine Motor — Low mess — 10+ min setup — 10 min
+7. Ribbon Pull Box — Fine Motor — Low mess — 10+ min setup — 5 min
+8. String Beads — Fine Motor — Low mess — 2 min setup — 10 min
+9. Clothespin Drop — Fine Motor — Low mess — 2 min setup — 5 min
+10. Water Transfer with Sponges — Fine Motor — Medium mess — 2 min setup — 10 min
+11. Indoor Obstacle Course — Gross Motor — Low mess — 10+ min setup — 15+ min
+12. Ball Rolling and Catching — Gross Motor — Low mess — 2 min setup — 10 min
+13. Dance Freeze — Gross Motor — Low mess — 2 min setup — 10 min
+14. Ribbon Dancing — Gross Motor — Low mess — 2 min setup — 10 min
+15. Balloon Tapping — Gross Motor — Low mess — 2 min setup — 10 min
+16. Push and Pull Toys — Gross Motor — Low mess — 2 min setup — 15+ min
+17. Stepping Stones — Gross Motor — Low mess — 5 min setup — 10 min
+18. Box Walking — Gross Motor — Low mess — 10 min setup — 10 min
+19. Bubble Wrap Stomp — Gross Motor — Low mess — 2 min setup — 5 min
+20. Pillow Mountain Climbing — Gross Motor — Low mess — 5 min setup — 15+ min
+21. Cotton Ball Races — Oral Motor — Low mess — 2 min setup — 5 min
+22. Coin Slot Drop — Fine Motor — Low mess — 5 min setup — 5 min
+23. Sidewalk Chalk Drawing — Fine Motor — Medium mess — 2 min setup — 15+ min
+24. Painting with Water — Fine Motor — Low mess — 2 min setup — 10 min
 
-## Related
+### Language & Communication (24 activities)
+25. Story Box Theatre — Vocabulary — Low mess — 10+ min setup — 15+ min
+26. Picture Book Conversation — Conversation — Low mess — 2 min setup — 10 min
+27. Simon Says — Following Directions — Low mess — 2 min setup — 5 min
+28. Puppet Show — Verbal Expression — Low mess — 5 min setup — 10 min
+29. Song Basket — Vocabulary — Low mess — 10+ min setup — 10 min
+30. Action Songs — Vocabulary — Low mess — 2 min setup — 5 min
+31. Everyday Narration — Vocabulary — Low mess — 2 min setup — 5 min
+32. Mystery Box — Descriptive Language — Low mess — 5 min setup — 10 min
+33. Picture Sorting and Naming — Vocabulary — Low mess — 5 min setup — 10 min
+34. Phone Calls — Conversation — Low mess — 2 min setup — 10 min
+35. Picture Walk — Prediction — Low mess — 2 min setup — 5 min
+36. Animal Sounds — Sound Production — Low mess — 2 min setup — 5 min
+37. Silly Sentences — Sentence Structure — Low mess — 2 min setup — 5 min
+38. I Spy Colors — Vocabulary — Low mess — 2 min setup — 5 min
+39. Story Sequencing Cards — Sequencing — Low mess — 5 min setup — 10 min
+40. Rhyming Basket — Phonological Awareness — Low mess — 10+ min setup — 10 min
+41. Mirror Talk — Articulation — Low mess — 2 min setup — 5 min
+42. Nursery Rhyme Time — Phonological Awareness — Low mess — 2 min setup — 5 min
+43. Texture Words — Descriptive Language — Low mess — 5 min setup — 10 min
+44. Photo Album Stories — Narrative Skills — Low mess — 2 min setup — 10 min
+45. Question of the Day — Question Answering — Low mess — 2 min setup — 5 min
+46. Echo Games — Pronunciation — Low mess — 2 min setup — 5 min
+47. Shopping List Game — Memory — Low mess — 2 min setup — 10 min
+48. Body Part Labeling — Vocabulary — Low mess — 2 min setup — 5 min
 
-- [Raising Pixels](https://raisingpixels.dev) — Newsletter on raising tech-native kids
-- [meimakes.com](https://meimakes.com) — Author's hub
-- [ToddlerLabs](https://toddlerlabs.com) — Educational games for toddlers
+### Cognitive Development (22 activities)
+49. Color Sorting Cups — Color Recognition — Low mess — 5 min setup — 10 min
+50. Shape Matching — Shape Recognition — Low mess — 5 min setup — 10 min
+51. Size Seriation — Size Comparison — Low mess — 2 min setup — 10 min
+52. Simple Puzzles — Problem Solving — Low mess — 2 min setup — 10 min
+53. Object Permanence Box — Object Permanence — Low mess — 2 min setup — 10 min
+54. Memory Matching — Memory — Low mess — 2 min setup — 5 min
+55. Counting Objects — Counting — Low mess — 2 min setup — 5 min
+56. Sink or Float — Prediction — Medium mess — 5 min setup — 10 min
+57. Picture Matching — Visual Discrimination — Low mess — 5 min setup — 10 min
+58. Simple Pattern Blocks — Spatial Awareness — Low mess — 2 min setup — 10 min
+59. Nesting and Stacking — Size Relationships — Low mess — 2 min setup — 10 min
+60. Treasure Basket — Exploration — Low mess — 5 min setup — 15+ min
+61. What's Missing Game — Memory — Low mess — 2 min setup — 5 min
+62. Animal Categories — Categorization — Low mess — 2 min setup — 10 min
+63. Simple Cause and Effect Toys — Cause and Effect — Low mess — 2 min setup — 10 min
+64. Two-Piece Puzzles — Part-Whole Relationships — Low mess — 2 min setup — 5 min
+65. Magnet Exploration — Classification — Low mess — 5 min setup — 10 min
+66. Sound Matching — Auditory Discrimination — Low mess — 10+ min setup — 10 min
+67. Shadow Play — Cause and Effect — Low mess — 2 min setup — 10 min
+68. Nature Collecting — Observation — Medium mess — 2 min setup — 15+ min
+69. Texture Matching — Tactile Discrimination — Low mess — 5 min setup — 10 min
+70. Obstacle Course Problems — Problem Solving — Low mess — 10+ min setup — 15+ min
+
+### Sensory Exploration (17 activities)
+71. Sensory Bin — Rice — Tactile Exploration — Medium mess — 10+ min setup — 15+ min
+72. Water Play — Tactile Exploration — High mess — 5 min setup — 15+ min
+73. Scented Playdough — Multi-sensory — Medium mess — 5 min setup — 15+ min
+74. Light Table Exploration — Visual Exploration — Low mess — 5 min setup — 10 min
+75. Texture Walk — Tactile Exploration — Low mess — 10+ min setup — 10 min
+76. Sound Bottles — Auditory Exploration — Low mess — 10+ min setup — 10 min
+77. Texture Collage — Tactile Exploration — Medium mess — 5 min setup — 15+ min
+78. Scent Matching — Olfactory Exploration — Low mess — 5 min setup — 5 min
+79. Sensory Bin — Beans — Tactile Exploration — Medium mess — 5 min setup — 15+ min
+80. Ice Melting Play — Temperature Awareness — Medium mess — 5 min setup — 10 min
+81. Color Mixing with Finger Paint — Visual Exploration — High mess — 5 min setup — 15+ min
+82. Sensory Bottles — Visual Exploration — Low mess — 10+ min setup — 10 min
+83. Squishy Bags — Tactile Exploration — Low mess — 5 min setup — 10 min
+84. Feely Box — Tactile Discrimination — Low mess — 5 min setup — 10 min
+85. Bubble Wrap Painting — Tactile and Visual — Medium mess — 5 min setup — 15+ min
+86. Nature Sensory Tray — Natural Textures — Low mess — 5 min setup — 10 min
+87. Musical Instruments Exploration — Auditory Exploration — Low mess — 2 min setup — 10 min
+
+### Social & Emotional (13 activities)
+88. Emotion Cards — Emotional Literacy — Low mess — 2 min setup — 5 min
+89. Mirror Emotions — Emotional Awareness — Low mess — 2 min setup — 5 min
+90. Turn-Taking Games — Turn-Taking — Low mess — 2 min setup — 10 min
+91. Cooperative Art — Cooperation — Medium mess — 2 min setup — 10 min
+92. Doll or Stuffed Animal Care — Empathy — Low mess — 2 min setup — 15+ min
+93. Sharing Snack — Sharing — Low mess — 5 min setup — 10 min
+94. Feeling Songs — Emotional Expression — Low mess — 2 min setup — 5 min
+95. Helping Activities — Responsibility — Low mess — 2 min setup — 10 min
+96. Simple Role Play — Social Understanding — Low mess — 5 min setup — 15+ min
+97. Calming Corner — Self-Regulation — Low mess — 10+ min setup — As needed
+98. Balloon Volleyball — Cooperation — Low mess — 2 min setup — 10 min
+99. Emotion Storytime — Emotional Literacy — Low mess — 2 min setup — 10 min
+100. Gratitude Circle — Gratitude — Low mess — 2 min setup — 5 min
+
+### Food & Kitchen (15 activities)
+101. Simple Lemonade Making — Following Steps — Medium mess — 5 min setup — 10 min
+102. Homemade Granola Helper — Measurement — Medium mess — 5 min setup — 15+ min
+103. Fruit Parfait Assembly — Sequencing — Medium mess — 5 min setup — 10 min
+104. Smoothie Making — Cause and Effect — Medium mess — 5 min setup — 10 min
+105. Veggie & Dip Cups — Fine Motor — Low mess — 5 min setup — 10 min
+106. Banana Bread Helpers — Hand Strength — Medium mess — 10+ min setup — 15+ min
+107. Trail Mix Creation — Counting — Low mess — 5 min setup — 10 min
+108. Fruit Popsicle Making — Transformation — Medium mess — 5 min setup — 10 min
+109. No-Bake Energy Balls — Fine Motor — Medium mess — 5 min setup — 15+ min
+110. English Muffin Pizzas — Spreading Skills — Medium mess — 5 min setup — 15+ min
+111. Fruit-Infused Water — Taste Exploration — Low mess — 5 min setup — 5 min
+112. Yogurt Bark Decorating — Fine Motor — Medium mess — 5 min setup — 10 min
+113. Tortilla Roll-Ups — Rolling Skills — Low mess — 5 min setup — 10 min
+114. Overnight Oats Preparation — Measurement — Low mess — 5 min setup — 10 min
+115. Vegetable Stamp Prints — Creative Expression — Medium mess — 5 min setup — 15+ min
+
+## Educational Games (10 games)
+
+### From airplanes.games
+- Landing Path — Fine Motor + Spatial — Ages 3-5 — https://airplanes.games/landing-path.html
+- Takeoff Path — Fine Motor + Spatial — Ages 3-5 — https://airplanes.games/takeoff-path.html
+- Pattern Lab — Pattern Recognition — Ages 3-5 — https://airplanes.games/pattern-lab.html
+- Logic Hangar — Logical Reasoning — Ages 4-5 — https://airplanes.games/logic-hangar.html
+- Flight Path — Problem Solving + Spatial — Ages 3-5 — https://airplanes.games/flight-path.html
+- Cargo Count — Counting + 1:1 Correspondence — Ages 3-5 — https://airplanes.games/cargo-count.html
+
+### From Toddler Labs / meimakes
+- Tiny Terminal — Keyboard + Cause & Effect — Ages 2-5 — https://tiny-terminal.com
+- Word Train — Phonics + Blending — Ages 3-6 — https://meimakes.com/word-train/
+- Shapes — Geometry + Vocabulary — Ages 2-4 — https://meimakes.com/shapes/
+- Bigger Than Race — Number Sense + Comparison — Ages 3-6 — https://meimakes.com/bigger-than-race/
+
+### Full Game Collection
+- 25+ educational browser games — All free, no ads, no accounts — https://madladstudios.com
+
+## Related Resources
+- Build With Your Kid (ebook): 12 weeks of tech projects for toddlers — https://buildwithyourkid.com
+- Raising Pixels (Substack): Parenting + tech newsletter — https://raisingpixels.dev
+- GitHub: https://github.com/meimakes/toddlerlabs.com

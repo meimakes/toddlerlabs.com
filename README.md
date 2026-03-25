@@ -1,37 +1,43 @@
-# Toddler Activity Finder
+# Toddler Labs
 
-A free interactive tool to help parents find developmentally appropriate activities for toddlers ages 2-5. Filter by skill area, setup time, messiness level, and duration.
+**115+ free educational activities and browser games for toddlers ages 2-5.**
 
-**Live:** [toddlerdo.com](https://toddlerdo.com)
+No ads. No tracking. No accounts. Just activities.
 
-## Features
+→ **[toddlerlabs.com](https://toddlerlabs.com)**
 
-- 50+ curated activities organized by developmental domain
-- Filter by skill category, activity length, setup time, messiness level
-- Keyword search by materials or skills
-- Mobile-friendly, no account required
-- Runs entirely in the browser (no backend)
+---
 
-## Quick Start
+## What's here
 
-```sh
-git clone https://github.com/meimakes/toddler-activity-finder.git
-cd toddler-activity-finder
-open index.html
-```
+A single-page directory with:
 
-## Adding Activities
+- **115 hands-on activity protocols** — filter by developmental category (motor, language, cognitive, sensory, social), mess level, time, and setup
+- **10 free educational browser games** — airplane-themed spatial/logic games, phonics, shapes, number sense, and more
+- **Links** to the full game collection at [madladstudios.com](https://madladstudios.com)
 
-Edit `js/activities.js` and add entries following the existing format.
+All free. All browser-based. No installs.
 
-## Related Projects
+---
 
-- [Raising Pixels](https://raisingpixels.dev) — Newsletter on raising tech-native kids
-- [ToddlerLabs](https://toddlerlabs.com) — Educational games for toddlers
-- [meimakes.com](https://meimakes.com)
+## Design
 
-## License
+CMYK print-press aesthetic: Zilla Slab + Space Mono, halftone dot overlays, registration marks, industrial typography. Built as a single HTML file — no framework, no build step.
 
-MIT
+---
+
+## Contribute
+
+Found an activity that belongs here? [Open an issue](https://github.com/meimakes/toddlerlabs.com/issues/new) with the details.
+
+---
+
+## Related
+
+- [Build With Your Kid](https://buildwithyourkid.com) — 12 weeks of tech projects to build with your toddler
+- [Raising Pixels](https://raisingpixels.dev) — Newsletter for parent developers
+- [@meimakes](https://x.com/meimakes) — Creator
+
+---
 
 Built by [@meimakes](https://x.com/meimakes)
