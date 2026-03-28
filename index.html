@@ -2020,7 +2020,7 @@ function handleEmailCapture(e) {
   // We can't read the iframe response (cross-origin), so assume success after a delay
   // Substack sends a confirmation email regardless
   setTimeout(() => {
-    status.textContent = 'Check your inbox for a confirmation email';
+    status.textContent = 'You\'re in — check your inbox for a welcome email';
     status.className = 'email-capture-status success';
     btn.textContent = 'SUBSCRIBED';
     form.email.value = '';
