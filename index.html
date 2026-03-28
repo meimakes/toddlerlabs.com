@@ -1108,6 +1108,107 @@ body {
 }
 
 /* ============================================================
+   EMAIL CAPTURE
+   ============================================================ */
+.email-capture {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+.email-capture-inner {
+  background: var(--bg);
+  border: 3px dashed var(--cyan);
+  padding: 2rem;
+  text-align: center;
+  position: relative;
+}
+.email-capture-overline {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--cyan);
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+.email-capture-title {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.email-capture-body {
+  font-size: 0.85rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+  opacity: 0.8;
+}
+.email-capture-form {
+  display: flex;
+  gap: 0.5rem;
+  max-width: 460px;
+  margin: 0 auto;
+}
+@media (max-width: 480px) {
+  .email-capture-form { flex-direction: column; }
+}
+.email-capture-input {
+  flex: 1;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  padding: 0.6rem 0.8rem;
+  border: 2px solid var(--black);
+  background: var(--white, #fff);
+  color: var(--black);
+  outline: none;
+}
+@media (prefers-color-scheme: dark) {
+  .email-capture-input { background: #2A2A2A; }
+}
+.email-capture-input:focus {
+  border-color: var(--cyan);
+}
+.email-capture-btn {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  padding: 0.6rem 1.2rem;
+  background: var(--black);
+  color: var(--bg);
+  border: 2px solid var(--black);
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background 0.15s, color 0.15s;
+  white-space: nowrap;
+}
+.email-capture-btn:hover {
+  background: var(--cyan);
+  border-color: var(--cyan);
+  color: var(--black);
+}
+.email-capture-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.email-capture-status {
+  font-size: 0.8rem;
+  margin-top: 0.75rem;
+  min-height: 1.2em;
+}
+.email-capture-status.success { color: var(--cyan); }
+.email-capture-status.error { color: var(--magenta); }
+.email-capture-fine {
+  font-size: 0.7rem;
+  opacity: 0.5;
+  margin-top: 0.5rem;
+}
+.email-capture-fine a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+/* ============================================================
    FOOTER
    ============================================================ */
 .site-footer {
@@ -1546,6 +1647,21 @@ body {
     </div>
   </aside>
 
+  <!-- EMAIL CAPTURE -->
+  <section class="email-capture" aria-label="Newsletter signup">
+    <div class="email-capture-inner">
+      <div class="email-capture-overline">WEEKLY DISPATCH</div>
+      <h2 class="email-capture-title">New activities in your inbox</h2>
+      <p class="email-capture-body">Free weekly ideas for building, learning, and playing with your kid. No spam, no fluff.</p>
+      <form class="email-capture-form" id="emailCaptureForm" onsubmit="return handleEmailCapture(event)">
+        <input type="email" name="email" class="email-capture-input" placeholder="your@email.com" required autocomplete="email" aria-label="Email address">
+        <button type="submit" class="email-capture-btn" id="emailCaptureBtn">SUBSCRIBE</button>
+      </form>
+      <p class="email-capture-status" id="emailCaptureStatus" aria-live="polite"></p>
+      <p class="email-capture-fine">Delivered via <a href="https://raisingpixels.dev" target="_blank" rel="noopener noreferrer">Raising Pixels</a> on Substack</p>
+    </div>
+  </section>
+
 </main>
 
 <!-- FOOTER -->
@@ -1852,6 +1968,73 @@ function toggleMobileFilters() {
 // INIT
 // ============================================================
 renderGrid();
+
+// ============================================================
+// EMAIL CAPTURE → Substack
+// ============================================================
+function handleEmailCapture(e) {
+  e.preventDefault();
+  const form = document.getElementById('emailCaptureForm');
+  const btn = document.getElementById('emailCaptureBtn');
+  const status = document.getElementById('emailCaptureStatus');
+  const email = form.email.value.trim();
+  if (!email) return false;
+
+  btn.disabled = true;
+  btn.textContent = 'SENDING...';
+  status.textContent = '';
+  status.className = 'email-capture-status';
+
+  // Create a hidden iframe to submit the Substack form
+  // This avoids CORS by loading a page on the Substack domain
+  const iframe = document.createElement('iframe');
+  iframe.style.display = 'none';
+  iframe.name = 'substack-capture-' + Date.now();
+  document.body.appendChild(iframe);
+
+  // Create a form targeting the iframe
+  const proxyForm = document.createElement('form');
+  proxyForm.method = 'POST';
+  proxyForm.action = 'https://www.raisingpixels.dev/api/v1/free';
+  proxyForm.target = iframe.name;
+  proxyForm.style.display = 'none';
+
+  const fields = {
+    email: email,
+    first_url: 'https://toddlerlabs.com/',
+    current_url: window.location.href,
+    current_referrer: document.referrer || '',
+    type: 'subscribe'
+  };
+  for (const [k, v] of Object.entries(fields)) {
+    const input = document.createElement('input');
+    input.type = 'hidden';
+    input.name = k;
+    input.value = v;
+    proxyForm.appendChild(input);
+  }
+
+  document.body.appendChild(proxyForm);
+  proxyForm.submit();
+
+  // We can't read the iframe response (cross-origin), so assume success after a delay
+  // Substack sends a confirmation email regardless
+  setTimeout(() => {
+    status.textContent = 'Check your inbox for a confirmation email';
+    status.className = 'email-capture-status success';
+    btn.textContent = 'SUBSCRIBED';
+    form.email.value = '';
+    // Track in Plausible
+    if (window.plausible) plausible('Email Capture', { props: { source: 'toddlerlabs' } });
+    // Clean up
+    setTimeout(() => {
+      iframe.remove();
+      proxyForm.remove();
+    }, 5000);
+  }, 2000);
+
+  return false;
+}
 </script>
 
 </body>
