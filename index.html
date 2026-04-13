@@ -1209,6 +1209,41 @@ body {
 }
 
 /* ============================================================
+   CTA ROW (book + email side by side on tablet+)
+   ============================================================ */
+.cta-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  margin: 3rem 0;
+}
+
+@media (min-width: 768px) {
+  .cta-row {
+    grid-template-columns: 1fr 1fr;
+  }
+  .cta-row .cta-section,
+  .cta-row .email-capture {
+    margin: 0;
+    padding: 0;
+  }
+  .cta-row .cta-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .cta-row .cta-inner {
+    grid-template-columns: 1fr;
+    flex: 1;
+  }
+  .cta-row .email-capture-inner {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+/* ============================================================
    FOOTER
    ============================================================ */
 .site-footer {
@@ -1625,7 +1660,8 @@ body {
     </div>
   </section>
 
-  <!-- CTA SECTION -->
+  <!-- CTA ROW -->
+  <div class="cta-row">
   <aside class="cta-section" aria-label="Protocol Upgrade — Build With Your Kid book">
     <div class="cta-stamp" aria-hidden="true">ADVANCED PROTOCOL</div>
     <div class="cta-inner">
@@ -1661,6 +1697,7 @@ body {
       <p class="email-capture-fine">Delivered via <a href="https://raisingpixels.dev" target="_blank" rel="noopener noreferrer">Raising Pixels</a> on Substack</p>
     </div>
   </section>
+  </div><!-- /cta-row -->
 
 </main>
 
@@ -1804,7 +1841,7 @@ const activities = [
 // ============================================================
 let activeCategories = new Set();
 let filteredActivities = [...activities];
-let visibleCount = 9;
+let visibleCount = 8;
 
 // ============================================================
 // RENDER
@@ -1902,7 +1939,7 @@ function applyFilters() {
     return true;
   });
 
-  visibleCount = 9;
+  visibleCount = 8;
   renderGrid();
 }
 
