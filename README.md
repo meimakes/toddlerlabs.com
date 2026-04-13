@@ -32,9 +32,14 @@ Found an activity that belongs here? [Open an issue](https://github.com/meimakes
 
 ---
 
+## Want more structure?
+
+**[Build With Your Kid](https://buildwithyourkid.com)** — 12 weeks of computational thinking projects for ages 2-6. From unplugged activities to AI-assisted game building. The book behind this site.
+
+---
+
 ## Related
 
-- [Build With Your Kid](https://buildwithyourkid.com) — 12 weeks of tech projects to build with your toddler
 - [Raising Pixels](https://raisingpixels.dev) — Newsletter for parent developers
 - [@meimakes](https://x.com/meimakes) — Creator
 
